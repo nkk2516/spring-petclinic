@@ -135,6 +135,7 @@
           </execution>
         </executions>
       </plugin>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -155,6 +156,16 @@
           </execution>
         </executions>
       </plugin>
+      <plugins>
+       <plugin> 
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <mainClass>com.baeldung.demo.DemoApplication</mainClass>
+            <layout>JAR</layout>
+        </configuration>
+     </plugin>
+    </plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
